@@ -33,6 +33,7 @@ function cargarJuegos() {
                 }
 
                 else if (
+                    titulo.includes("forza") ||
                     titulo.includes("race") ||
                     titulo.includes("rally") ||
                     titulo.includes("car")
