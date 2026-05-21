@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>GAMEZONE</h1>
+
+       <nav>
+    <ul>
+
+        <li>
+            <a href="#" onclick="cargarJuegos()">
+                Inicio
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="filtrarCategoria('action')">
+                Acción
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="filtrarCategoria('sports')">
+                Deportes
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="filtrarCategoria('racing')">
+                Carreras
+            </a>
+        </li>
+
+        <li>
+            <a href="login.html">
+                Cerrar Sesión
+            </a>
+        </li>
+
+    </ul>
+</nav> 
+    </header>
+
+
+    <div class="banner">
+        <h2>Explora los mejores videojuegos</h2>
+        <p>Busca tus juegos favoritos</p>
+    </div>
+
+ 
+    <div class="buscador">
+        <input type="text" id="buscar" placeholder="Buscar videojuego">
+        <button onclick="buscarJuego()">Buscar</button>
+    </div>
+
+    <section>
+        <h2 class="titulo-categoria">Juegos Populares</h2>
+
+        <div class="catalogo" id="catalogo">
+
+        </div>
+    </section>
+
+
+</div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
